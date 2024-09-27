@@ -10,4 +10,5 @@ npm run dev
 Default CSS Starter объяснение https://www.youtube.com/watch?v=UDdyGNlQK5w
 repo - https://github.com/john-smilga/default-starter
 создать favicon  https://favicon.io/
+изображения с контролем основного цвета https://undraw.co/ картинки для сайта
  -->
