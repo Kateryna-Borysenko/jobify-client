@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import {
   HomeLayout,
   Error,
@@ -10,12 +10,12 @@ import {
   AddJob,
   Stats,
   Profile,
-  Admin
-} from './pages'
+  Admin,
+} from "./pages";
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <HomeLayout />,
     errorElement: <Error />,
     children: [
@@ -24,33 +24,33 @@ const router = createBrowserRouter([
         element: <Landing />,
       },
       {
-        path: 'register',
+        path: "register",
         element: <Register />,
       },
       {
-        path: 'login',
+        path: "login",
         element: <Login />,
       },
       {
-        path: 'dashboard',
+        path: "dashboard",
         element: <DashboardLayout />,
         children: [
           {
             index: true,
             element: <AddJob />,
           },
-          { path: 'stats', element: <Stats /> },
+          { path: "stats", element: <Stats /> },
           {
-            path: 'all-jobs',
+            path: "all-jobs",
             element: <AllJobs />,
           },
 
           {
-            path: 'profile',
+            path: "profile",
             element: <Profile />,
           },
           {
-            path: 'admin',
+            path: "admin",
             element: <Admin />,
           },
         ],
@@ -60,7 +60,7 @@ const router = createBrowserRouter([
 ]);
 
 const App = () => {
-  return <RouterProvider router={router} />
+  return <RouterProvider router={router} />;
 };
 
-export default App
+export default App;
