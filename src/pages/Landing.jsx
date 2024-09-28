@@ -1,7 +1,7 @@
-import Wrapper from '../assets/wrappers/LandingPage';
-import main from '../assets/images/main.svg';
-import { Link } from 'react-router-dom';
-import { Logo } from '../components';
+import { Link } from 'react-router-dom'
+import { Logo } from '../components'
+import Wrapper from '../assets/wrappers/LandingPage'
+import main from '../assets/images/main.svg'
 
 const Landing = () => {
   return (
@@ -30,4 +30,4 @@ const Landing = () => {
   );
 };
 
-export default Landing;
+export default Landing
